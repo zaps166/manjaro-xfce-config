@@ -71,7 +71,8 @@ Other hints:
   - set `MODULES=(amdgpu)` for early KMS for AMD Radeon GPUs
   - set `MODULES=(i915)` for early KMS for Intel GPUs
   - run `sudo mkinitcpio -P`
-- don't install `libva-vdpau-driver` - uninstall if you have it
+- don't install `libva-vdpau-driver` and `xfce4-volumed-pulse` - uninstall if you have it
+- command to toggle microphone mute: `pactl set-source-mute @DEFAULT_SOURCE@ toggle`
 - on laptop install `tlp` and `tlpui` and configure PCI Runtime PM, ASPM, CPU governor for AC and Battery (enable: `sudo systemctl enable tlp`)
 - if you don't configure NVIDIA by MHWD, add `options nvidia "NVreg_DynamicPowerManagement=0x02"` to `/etc/modprobe.d/nvidia.conf` on modern laptops to allow to suspend GPU
 - run `watch -n 1 cat /sys/bus/pci/devices/0000:01:00.0/power/runtime_status` to check power status for NVIDIA GPU on laptop (replace `0000:01:00.0` with your configuration from `lspci`)
