@@ -42,6 +42,8 @@ Useful Firefox about:config flags:
 - `browser.download.improvements_to_download_panel = false`
 - `places.history.expiration.max_pages = 2147483647` (create new integer value)
 - `media.autoplay.block-event.enabled = true`
+- `fission.autostart = false`
+- `browser.tabs.searchclipboardfor.middleclick = false`
 
 For VA-API acceleration in Firefox:
 - `media.ffmpeg.vaapi.enabled = true`
